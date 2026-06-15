@@ -34,38 +34,3 @@ train.py — Scales features with MinMaxScaler, builds 24-hour input sequences, 
 app.py — Loads the trained model and scaler, recursively forecasts the next 6 hours, visualizes results in an interactive Streamlit dashboard, and generates a smart cooling recommendation
 
 
-📈 Sample Output
-
-Show Image
-
-🚀 Getting Started
-
-bash# 1. Clone the repository
-git clone https://github.com/<your-username>/ai-weather-smart-cooling.git
-cd ai-weather-smart-cooling
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Fetch weather data
-python fetch_data.py
-
-# 4. Train the LSTM model
-python train.py
-
-# 5. Launch the Streamlit app
-streamlit run app.py
-
-📂 Project Structure
-
-ai-weather-smart-cooling/
-├── data/
-│   └── weather_history.csv
-├── model/
-│   ├── lstm_weather.h5
-│   └── scaler.pkl
-├── fetch_data.py
-├── train.py
-├── app.py
-├── requirements.txt
-└── README.md
